@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IPTV Player TV</string>
+    <string name="setup_subtitle">أدخل بيانات مصدر البث للبدء</string>
+
+    <string name="switch_to_m3u">التبديل إلى رابط M3U</string>
+    <string name="switch_to_xtream">التبديل إلى Xtream Codes</string>
+
+    <string name="hint_host">Host / IP (مثال: example.com)</string>
+    <string name="hint_port">Port (مثال: 80)</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_m3u_url">رابط ملف M3U الكامل</string>
+
+    <string name="load">تحميل القنوات</string>
+    <string name="loading">جاري التحميل…</string>
+    <string name="error_loading">حدث خطأ: %1$s</string>
+    <string name="no_channels_found">لم يتم العثور على قنوات، تأكد من البيانات</string>
+
+    <string name="favorites">المفضلة</string>
+    <string name="play">تشغيل</string>
+    <string name="add_favorite">إضافة للمفضلة</string>
+    <string name="remove_favorite">إزالة من المفضلة</string>
+</resources>
