@@ -11,6 +11,7 @@
     <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
     <string name="hint_m3u_url">رابط ملف M3U الكامل</string>
+    <string name="hint_parental_pin">رقم سري للرقابة الأبوية (اختياري - اتركه فارغ لتعطيلها)</string>
 
     <string name="load">تحميل القنوات</string>
     <string name="loading">جاري التحميل…</string>
@@ -21,4 +22,31 @@
     <string name="play">تشغيل</string>
     <string name="add_favorite">إضافة للمفضلة</string>
     <string name="remove_favorite">إزالة من المفضلة</string>
+    <string name="movie">فيلم</string>
+    <string name="series">مسلسل</string>
+    <string name="live_tv_label">بث مباشر</string>
+
+    <string name="program_info">معلومات البرنامج الحالي</string>
+    <string name="epg_unavailable">لا تتوفر بيانات دليل البرامج لهذه القناة</string>
+
+    <string name="watch_archive">مشاهدة الأرشيف</string>
+    <string name="last_30_min">آخر 30 دقيقة</string>
+    <string name="last_1_hour">آخر ساعة</string>
+    <string name="last_3_hours">آخر 3 ساعات</string>
+
+    <string name="parental_pin_title">أدخل الرقم السري</string>
+    <string name="wrong_pin">الرقم السري غير صحيح</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="search_hint">ابحث عن قناة أو فيلم أو مسلسل…</string>
+    <string name="results_count">%1$d نتيجة</string>
+
+    <string name="playback_options">خيارات التشغيل (اضغط زر القائمة Menu للوصول هنا)</string>
+    <string name="subtitles_audio">الترجمة والصوت</string>
+    <string name="aspect_ratio">نسبة العرض</string>
+    <string name="sleep_timer">مؤقت النوم</string>
+    <string name="no_tracks_available">لا تتوفر مسارات ترجمة أو صوت إضافية</string>
+    <string name="off">إيقاف</string>
+    <string name="minutes">دقيقة</string>
 </resources>

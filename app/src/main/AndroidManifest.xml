@@ -38,6 +38,18 @@
             android:theme="@style/Theme.Setup" />
 
         <activity
+            android:name=".SeriesDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Leanback" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Setup" />
+
+        <activity
             android:name=".PlaybackActivity"
             android:exported="false"
             android:screenOrientation="landscape"

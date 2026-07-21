@@ -6,5 +6,7 @@ data class Channel(
     val streamUrl: String,
     val logoUrl: String? = null,
     val category: String = "General",
-    var isFavorite: Boolean = false
+    var isFavorite: Boolean = false,
+    val hasArchive: Boolean = false,
+    val archiveDurationMinutes: Int = 0
 )

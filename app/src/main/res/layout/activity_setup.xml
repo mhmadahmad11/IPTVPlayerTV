@@ -103,6 +103,16 @@
             android:layout_marginTop="24dp"
             android:text="@string/load" />
 
+        <EditText
+            android:id="@+id/parental_pin_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/hint_parental_pin"
+            android:inputType="numberPassword"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+
         <TextView
             android:id="@+id/status_text"
             android:layout_width="match_parent"

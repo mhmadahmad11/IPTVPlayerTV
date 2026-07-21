@@ -47,6 +47,8 @@ dependencies {
     // ExoPlayer (Media3) - يدعم HLS و MPEG-TS وهما الأكثر استخداماً في IPTV
     implementation("androidx.media3:media3-exoplayer:1.3.1")
     implementation("androidx.media3:media3-exoplayer-hls:1.3.1")
+    implementation("androidx.media3:media3-exoplayer-dash:1.3.1")
+    implementation("androidx.media3:media3-datasource-rtmp:1.3.1")
     implementation("androidx.media3:media3-ui:1.3.1")
 
     // تحميل صور شعارات القنوات

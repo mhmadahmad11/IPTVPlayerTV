@@ -5,10 +5,10 @@ import androidx.leanback.widget.ImageCardView
 import androidx.leanback.widget.Presenter
 import com.bumptech.glide.Glide
 import com.iptvtv.player.R
-import com.iptvtv.player.model.Channel
+import com.iptvtv.player.model.CardData
 
-/** يعرض كل قناة كبطاقة (شعار + اسم + تصنيف) داخل صفوف BrowseSupportFragment. */
-class ChannelCardPresenter : Presenter() {
+/** يعرض أي عنصر (قناة/فيلم/مسلسل/حلقة) كبطاقة موحدة داخل صفوف Leanback. */
+class MediaCardPresenter : Presenter() {
 
     private val cardWidthPx = 320
     private val cardHeightPx = 180
@@ -22,16 +22,15 @@ class ChannelCardPresenter : Presenter() {
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, item: Any) {
-        val channel = item as Channel
+        val data = item as CardData
         val cardView = viewHolder.view as ImageCardView
-
-        cardView.titleText = if (channel.isFavorite) "★ ${channel.name}" else channel.name
-        cardView.contentText = channel.category
+        cardView.titleText = data.title
+        cardView.contentText = data.subtitle
         cardView.setMainImageDimensions(cardWidthPx, cardHeightPx)
 
-        if (!channel.logoUrl.isNullOrBlank()) {
+        if (!data.imageUrl.isNullOrBlank()) {
             Glide.with(cardView.context)
-                .load(channel.logoUrl)
+                .load(data.imageUrl)
                 .placeholder(R.drawable.default_channel)
                 .error(R.drawable.default_channel)
                 .into(cardView.mainImageView)
@@ -41,7 +40,6 @@ class ChannelCardPresenter : Presenter() {
     }
 
     override fun onUnbindViewHolder(viewHolder: ViewHolder) {
-        val cardView = viewHolder.view as ImageCardView
-        cardView.mainImage = null
+        (viewHolder.view as ImageCardView).mainImage = null
     }
 }
